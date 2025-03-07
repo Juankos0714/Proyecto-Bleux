@@ -330,8 +330,348 @@ footer{
         a{
             color:#f31084
         }
-   
 }
+/* Media Queries para hacer el sitio responsive */
+
+/* Tablets grandes y pantallas medianas (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container-product {
+        width: 50%;
+    }
+    
+    .container-product-2 {
+        width: 50%;
+    }
+    
+    .content-product {
+        max-width: 80%;
+        padding-bottom: 15%;
+    }
+    
+    .content-product h2 {
+        font-size: 3rem;
+    }
+    
+    .object-1 img {
+        width: 35vw;
+    }
+    
+    .object-2 p {
+        width: 35vw;
+    }
+    
+    .container-prices .text-prices {
+        width: 80vw;
+    }
+}
+
+/* Tablets y pantallas más pequeñas (481px - 767px) */
+@media (max-width: 767px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .nav_1 {
+        margin-bottom: 1rem;
+    }
+    
+    .nav_2 ul {
+        gap: 1.5rem;
+        padding: 0;
+    }
+    
+    .first-container {
+        flex-direction: column;
+    }
+    
+    .container-product, .container-product-2 {
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+    }
+    
+    .content-product {
+        align-items: center;
+        max-width: 80%;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .object-1, .object-2 {
+        width: 90vw;
+        margin: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .object-1 {
+        justify-content: center;
+    }
+    
+    .object-1 img {
+        width: 50vw;
+    }
+    
+    .object-2 p {
+        width: 80vw;
+    }
+    
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+    
+    .price-item {
+        width: 80%;
+        max-width: 300px;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+}
+
+/* Smartphones y pantallas pequeñas (320px - 480px) */
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    nav {
+        padding: 0.5rem;
+        width: 100%;
+    }
+    
+    .nav_2 ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding-left: 0;
+    }
+    
+    .first-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .container-product {
+        height: auto;
+        min-height: 60vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-product-2 {
+        height: auto;
+        min-height: 40vh;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .content-product {
+        padding: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .content-product h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    .btns {
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
+    
+    .btn-1 {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .phone-right, .phone-left {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .phone-right img {
+        width: 80%;
+        max-height: 40vh;
+        object-fit: contain;
+    }
+    
+    .section-1 h2, .section-2 h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    .section-1, .section-2 {
+        width: 100%;
+        padding: 2rem 0;
+        box-sizing: border-box;
+    }
+    
+    .object-1, .object-2 {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        margin: 1rem 0;
+    }
+    
+    .object-2 p {
+        width: 100%;
+    }
+    
+    .object-2 h4 {
+        font-size: 1.8rem;
+    }
+    
+    .object-2 ul {
+        padding-left: 0;
+    }
+    
+    .container-prices {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    
+    .container-prices .text-prices {
+        width: 100%;
+    }
+    
+    .cards {
+        width: 100%;
+    }
+    
+    .price-item {
+        width: 100%;
+        max-width: 280px;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+    }
+    
+    .price-item p {
+        padding: 0 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+    .price-item ul {
+        padding-left: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .price {
+        width: 100%;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+    
+    .background-btn {
+        width: 100%;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+    
+    footer {
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    
+    .container-foot p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Media query especialmente para pantallas muy pequeñas */
+@media (max-width: 360px) {
+    body {
+        min-width: 320px;
+    }
+    
+    .content-product h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-1 h2, .section-2 h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btns {
+        width: 100%;
+        max-width: 220px;
+    }
+    
+    .object-1 img {
+        width: 100%;
+    }
+    
+    .object-2 h4 {
+        font-size: 1.5rem;
+    }
+    
+    .price-item {
+        max-width: 250px;
+    }
+    
+    .price-item h4 {
+        font-size: 1.5rem;
+    }
+    
+    .price p {
+        font-size: 18px;
+    }
+    
+    .price span {
+        font-size: 10px;
+    }
+    
+    .price-item button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Fix específico para el desbordamiento de cards */
+@media (max-width: 480px) {
+    .price-item {
+        /* Reset estilos que pueden causar desbordamiento */
+        margin: 0 auto 2rem;
+        overflow: hidden;
+    }
+    
+    .price {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .background-btn {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 
 
 
