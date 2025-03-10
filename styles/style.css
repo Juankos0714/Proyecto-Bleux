@@ -383,10 +383,24 @@ footer{
         flex-direction: column;
     }
     
-    .container-product, .container-product-2 {
+    .container-product{
         width: 100%;
         height: auto;
         min-height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .container-product-2{
+        width: 100%;
+            .phone-left,.phone-right{
+                width: 50vw;
+                    img{
+                        width: 20vw;
+                    }
+
+            }
     }
     
     .content-product {
@@ -429,6 +443,9 @@ footer{
     .price-item {
         width: 80%;
         max-width: 300px;
+    }
+    .price, .background-btn{
+        width: 110%;
     }
     
     footer {
@@ -645,7 +662,7 @@ footer{
     }
 } 
 /*Desbordamiento*/
-@media (max-width: 480px) {
+@media (max-width: 480px){
     nav{
         width: auto;
     }
