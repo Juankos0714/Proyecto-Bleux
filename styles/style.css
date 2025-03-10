@@ -120,7 +120,7 @@ nav{
     background-position: center center ;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9, #2e2550;
+    opacity: 0.9;
 }
 .phone-right{
     display: flex;
@@ -267,7 +267,7 @@ nav{
         transform: scale(1.05);
         transition: all 0.3s ease;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        .fa-leaf,.fa-cloud,.fa-briefcase,.fa-star,.fa-check{
+        .fa-leaf,.fa-cloud,.fa-briefcase,.fa-star,.fa-check, h4{
             color:#f31084
 
         }
@@ -331,16 +331,15 @@ footer{
             color:#f31084
         }
 }
-/* Media Queries para hacer el sitio responsive */
-
-/* Tablets grandes y pantallas medianas (768px - 1024px) */
 @media (max-width: 1024px) {
     .container-product {
         width: 50%;
+        height: 50vh;
     }
     
     .container-product-2 {
         width: 50%;
+        height: 50vh;
     }
     
     .content-product {
@@ -364,8 +363,6 @@ footer{
         width: 80vw;
     }
 }
-
-/* Tablets y pantallas más pequeñas (481px - 767px) */
 @media (max-width: 767px) {
     nav {
         height: auto;
@@ -439,7 +436,6 @@ footer{
     }
 }
 
-/* Smartphones y pantallas pequeñas (320px - 480px) */
 @media (max-width: 480px) {
     body {
         overflow-x: hidden;
@@ -452,7 +448,7 @@ footer{
     }
     
     .nav_2 ul {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
         align-items: center;
         padding-left: 0;
@@ -601,8 +597,6 @@ footer{
         font-size: 0.8rem;
     }
 }
-
-/* Media query especialmente para pantallas muy pequeñas */
 @media (max-width: 360px) {
     body {
         min-width: 320px;
@@ -649,12 +643,13 @@ footer{
         padding: 8px 12px;
         font-size: 0.8rem;
     }
-}
-
-/* Fix específico para el desbordamiento de cards */
+} 
+/*Desbordamiento*/
 @media (max-width: 480px) {
+    nav{
+        width: auto;
+    }
     .price-item {
-        /* Reset estilos que pueden causar desbordamiento */
         margin: 0 auto 2rem;
         overflow: hidden;
     }
@@ -671,6 +666,8 @@ footer{
         margin-right: 0;
     }
 }
+
+
 
 
 
